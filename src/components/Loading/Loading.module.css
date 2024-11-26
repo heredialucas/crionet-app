@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+  width: 300px;
+
+  .CircleLoading {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 #bf9319;
+    background: transparent;
+    animation: Animate 1s linear infinite;
+  }
+}
+
+@keyframes Animate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 100px 25%;
+  }
+}

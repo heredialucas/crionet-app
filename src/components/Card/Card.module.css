@@ -1,0 +1,125 @@
+.container:nth-child(odd) {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #256c89;
+  box-shadow: 0 0 3px 1px #256c89;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+
+  .leftContainer {
+    color: #256c89;
+    width: 30%;
+    border-right: 1px solid #256c89;
+  }
+
+  .rightContainer {
+    color: #256c89;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h4 {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0 0 0 5px;
+      padding: 0;
+    }
+
+    h2 {
+      margin: 0 0 0 15px;
+      padding: 0;
+    }
+
+    .btn {
+      background: #fff;
+      color: #256c89;
+      font-size: 14px;
+      font-weight: bold;
+      border: 1px solid #256c89;
+      padding: 3px 7px;
+      border-radius: 10px;
+      text-decoration: none;
+      align-self: flex-end;
+    }
+
+    .btn:hover {
+      background: #256c89;
+      color: #fff;
+    }
+  }
+}
+
+.container:nth-child(even) {
+  display: flex;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #bf9319;
+  box-shadow: 0 0 3px 1px #bf9319;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 10px;
+
+  .leftContainer {
+    color: #bf9319;
+    width: 30%;
+    border-right: 1px solid #bf9319;
+  }
+
+  .rightContainer {
+    color: #bf9319;
+    width: 70%;
+    height: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    h4 {
+      font-size: 12px;
+      font-weight: bold;
+      margin: 0;
+      padding: 0;
+    }
+
+    span {
+      font-size: 12px;
+      font-weight: normal;
+      margin: 0 0 0 5px;
+      padding: 0;
+    }
+
+    h2 {
+      margin: 0 0 0 15px;
+      padding: 0;
+    }
+
+    .btn {
+      background: #fff;
+      color: #bf9319;
+      font-size: 14px;
+      font-weight: bold;
+      border: 1px solid #bf9319;
+      padding: 3px 7px;
+      border-radius: 10px;
+      text-decoration: none;
+      align-self: flex-end;
+    }
+
+    .btn:hover {
+      background: #bf9319;
+      color: #fff;
+    }
+  }
+}

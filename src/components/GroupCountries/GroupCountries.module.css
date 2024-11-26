@@ -1,0 +1,66 @@
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  h2 {
+    color: #256c89;
+    font-size: xx-large;
+    font-weight: 800;
+  }
+
+  .btnOn {
+    background-color: #bf9319;
+    font-size: 17px;
+    color: #fff;
+    border: 2px solid #bf9319;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 2px #bf9319;
+    padding: 7px;
+    transition: 0.2s;
+  }
+
+  .btnOff {
+    background-color: #fff;
+    font-size: 17px;
+    color: #bf9319;
+    border: 2px solid #bf9319;
+    border-radius: 15px;
+    padding: 7px;
+    transition: 0.2s;
+  }
+
+  .btnOn:hover {
+    cursor: pointer;
+    background-color: #bf9319;
+    color: #fff;
+  }
+
+  .btnOn:active {
+    transform: scale(0.95);
+  }
+
+  .btnOff:hover {
+    cursor: pointer;
+    background-color: #bf9319;
+    color: #fff;
+  }
+
+  .btnOff:active {
+    transition: 0.2s;
+    transform: scale(0.95);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    .btnOn {
+      margin: 5px;
+    }
+    .btnOff {
+      margin: 5px;
+    }
+  }
+}
