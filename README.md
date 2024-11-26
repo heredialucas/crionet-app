@@ -1,50 +1,8 @@
-# React + TypeScript + Vite
+##Architecture and Design
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I componentized everything to the max that i could, so each part of the app is modular and easy to update or test without affecting the whole system. This approach ensures that the code is clean, maintainable, and scalable, making future updates or changes much easier to implement. By using GraphQL for data fetching, I ensure that the app communicates more efficiently with the backend, reducing unnecessary data loads and improving overall performance.
+this means more flexibility in adapting to changing business needs, better performance due to optimized queries, and an app that can easily scale as the user base grows. Each component can be independently upgraded or replaced, which makes the system more resilient and future-proof. Additionally, the modular nature allows us to prioritize specific areas for improvement without disrupting the entire app.
 
-Currently, two official plugins are available:
+##Challenges Faced
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+The biggest challenge was the limited time cause I only had about 5 hours to work on this. Because of that, i couldn't implement everything i wanted, like unit tests or some optimizations. I focused on getting the core functionality up and running, but with more time, I’d definitely add proper testing and improve performance further.
